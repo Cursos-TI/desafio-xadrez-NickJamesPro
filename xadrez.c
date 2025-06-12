@@ -7,25 +7,33 @@
 int main() {
     int torre= 1, Rainha= 1, Bispo = 1; // Variáveis para as peças do xadrez
 
+    printf("-----Início do jogo de xadrez-----\n");
+    printf("\n");
+
+    printf("Movimento da torre:\n");
     while ( torre <= 5) // Loop para a torre
     { 
-        printf(" Torre para direita\n"); // Movimento da torre
+        printf(" Casa %d: Direita\n", torre); // Movimento da torre
         torre++;
         ("\n");
-
+      
     }
+    printf("\n");
 
+    printf("Movimento da rainha:\n");
     do {
-        printf(" Rainha para esquerda\n"); // Movimento da rainha
+        printf(" Casa %d: Esquerda\n", Rainha); // Movimento da rainha
         Rainha++;
     } while ( Rainha <= 8); 
    
-
+    printf("\n");
+    printf("Movimento do bispo:\n");
     for ( Bispo = 1; Bispo <=5; Bispo++) // Loop para o bispo
     {
-        printf(" Bispo para cima, direita \n"); // Movimento do bispo
+        printf(" Casa %d: cima, direita \n", Bispo); // Movimento do bispo
     } 
+    printf("\n");
+    printf("-----Fim do jogo----- \n");
 
-    printf(" Fim do jogo \n");
     return 0;
 }
