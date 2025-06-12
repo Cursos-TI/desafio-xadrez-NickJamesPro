@@ -34,7 +34,21 @@ int main() {
     } 
     printf("\n");
 
-    
+    // Movimento do Cavalo
+    printf("Movimento do Cavalo:\n");
+
+    int x;
+    for (x = 1; x <= 2; x++) { // Loop 'for' para as 2 casas para baixo
+        printf(" Casa %d: baixo\n", x);
+    }
+
+    int y = 1;
+    do { // Loop 'do-while' para 1 casa à esquerda
+        printf(" Casa 3: esquerda\n");
+        y++;
+    } while (y <= 1); // Executa apenas uma vez
+
+    printf("\n");;
     printf("-----Fim do jogo----- \n");
 
     return 0;
